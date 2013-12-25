@@ -3,6 +3,9 @@
 
 <!DOCTYPE html>
 <head>
+
+
+
     <title> Snadtastic </title> 
   <link href="/normalize.css" rel="stylesheet">
   <style>
@@ -13,7 +16,7 @@
       color: white;
     }
     a {
-      color: white;
+      color: green;
     }
     h1 {
       font-size: 70px;
@@ -49,6 +52,14 @@
   </style>
 </head>
 <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <header>
     <img src="http://www.drakehs.org/academics/seadisc/endangeredspecies/2010/Maddie%20Julin/Images/bullfrog.jpg">
     <h1>Snad's Blog</h1>
@@ -62,12 +73,16 @@
     <h2>Welcome to Snadfrog.info</h2>
     <p>The ultimate frog. </p>
     <p> Show your appreciation!</p>
-    <button>Like</button>
+    <!--<button>Like</button> -->
+    <div class="fb-like" data-href="https://www.snadfrog.info" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
   </article>
   <article>
     <h2>Today is a very special day</h2>
-    <p>It's snadfrog's birthday!| To celebrate we are posting an exciting video......<a href="http://www.youtube.com/watch?v=Q9sYyfQHqRo" > Video </a>  .</p>
-    <button>Like</button>
+    <p>It's snadfrog's birthday!| To celebrate we are posting an exciting video.....</p>
+    <p>
+        <iframe width="420" height="315" src="//www.youtube.com/embed/Q9sYyfQHqRo?rel=0" frameborder="0" allowfullscreen></iframe> </p>
+    <!--<button>Like</button> -->
+    <div class="fb-like" data-href="https://www.snadfrog.info" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
   </article>
   <article>
    
@@ -116,8 +131,9 @@
 
 
   <script>
-    $("button").on("click", function() {
-      alert("Keep trying...you're still a tadpole!");
-    });
+   
+ ("button").on("click", function() { alert("Keep trying...you're still a tadpole!"); });
+
   </script>
+
 </body>
